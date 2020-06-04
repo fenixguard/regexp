@@ -28,6 +28,8 @@ def create_phone_number(phone_number):
         return f"+7({number[1:4]}){number[4:7]}-{number[7:9]}-{number[9:11]} доб.{number[11:16]}"
     elif len(number) == 11:
         return f"+7({number[1:4]}){number[4:7]}-{number[7:9]}-{number[9:11]}"
+    elif len(number) == 10:
+        return f"+7({number[0:3]}){number[3:6]}-{number[6:8]}-{number[8:10]}"
     elif phone_number == 'phone':
         return 'phone'
     else:
